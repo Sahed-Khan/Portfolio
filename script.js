@@ -1,11 +1,22 @@
-function showPage(pageId){
+const links = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll(".section");
 
-let pages = document.querySelectorAll(".page")
+links.forEach(link => {
 
-pages.forEach(page =>{
-page.classList.remove("active")
-})
+link.addEventListener("click", function(e){
 
-document.getElementById(pageId).classList.add("active")
+e.preventDefault();
 
-}
+const target = this.getAttribute("data-section");
+
+sections.forEach(section => {
+
+section.classList.remove("active");
+
+});
+
+document.getElementById(target).classList.add("active");
+
+});
+
+});

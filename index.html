@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <title>Portfolio BTS SIO</title>
@@ -9,14 +10,16 @@
 <body>
 
 <header>
-<h1>Portfolio - BTS SIO</h1>
+
+<h1>Mon Portfolio</h1>
 
 <nav>
 <ul>
-<li onclick="showPage('accueil')">ACCUEIL</li>
-<li onclick="showPage('epreuves')">EPREUVES</li>
-<li onclick="showPage('atelier')">ATELIER PRO</li>
-<li onclick="showPage('veille')">VEILLE TECH / JURIDIQUE</li>
+<li><a href="#" data-section="accueil">Accueil</a></li>
+<li><a href="#" data-section="epreuves">Epreuves</a></li>
+<li><a href="#" data-section="projets">Projets</a></li>
+<li><a href="#" data-section="veille">Veille</a></li>
+<li><a href="#" data-section="contact">Contact</a></li>
 </ul>
 </nav>
 
@@ -24,83 +27,168 @@
 
 
 <main>
+<section id="accueil" class="section active">
 
-<section id="accueil" class="page active">
+<div class="hero">
 
-<h2>Présentation du BTS SIO</h2>
+<img src="photo.jpg" class="photo">
+
+<div class="hero-text">
+
+<h1>Sahed Khan</h1>
+
 <p>
-Le BTS SIO (Services Informatiques aux Organisations) forme des professionnels
-capables de gérer les infrastructures réseaux et de développer des solutions
-informatiques pour les entreprises.
+Étudiant en BTS SIO option SISR passionné par
+les réseaux, la cybersécurité et l'administration systèmes.
 </p>
 
-<h2>Présentation du candidat</h2>
-<p>Nom : Votre Nom</p>
-<p>Formation : BTS SIO</p>
+</div>
 
-<h2>Rôle dans l'entreprise</h2>
-<p>Technicien informatique / Administrateur systèmes et réseaux.</p>
+</div>
 
-<h2>CV</h2>
-<a href="#">Télécharger mon CV</a>
 
-<h2>Entreprise</h2>
-<p>Description de l'entreprise.</p>
+<h2 class="title-section">Le BTS SIO</h2>
 
-<h2>Ecole</h2>
-<p>Nom de votre école.</p>
+<div class="card">
+<p>
+Le BTS SIO (Services Informatiques aux Organisations) forme
+des spécialistes des infrastructures réseau et du développement.
+Je suis dans l'option SISR spécialisée dans les systèmes et réseaux.
+</p>
+</div>
+
+
+<h2 class="title-section">Mon entreprise</h2>
+
+<div class="card">
+<p>
+Présentation de l'entreprise et de mon rôle
+dans l'administration réseau et la gestion informatique.
+</p>
+</div>
+
+
+<h2 class="title-section">Mon CV</h2>
+
+<a class="btn" href="cv.pdf" target="_blank">Voir mon CV</a>
+
+
+<h2 class="title-section">Certifications</h2>
+
+<div class="certifications">
+
+<div class="certif">
+<img src="cisco.png">
+<p>Cisco CCNA</p>
+</div>
+
+<div class="certif">
+<img src="anssi.png">
+<p>ANSSI</p>
+</div>
+
+<div class="certif">
+<img src="sec.png">
+<p>Cybersecurity</p>
+</div>
+
+</div>
+
+
+<h2 class="title-section">Mon parcours</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<img src="college.jpg">
+<div>
+<h3>2019</h3>
+<p>Brevet des collèges</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="lycee.jpg">
+<div>
+<h3>2022</h3>
+<p>Bac</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="bts.jpg">
+<div>
+<h3>2024</h3>
+<p>BTS SIO SISR - CFA Aurlom</p>
+</div>
+</div>
+
+</div>
 
 </section>
 
 
-<section id="epreuves" class="page">
+<section id="epreuves" class="section">
 
-<h2>E5</h2>
+<h2>Epreuves</h2>
 
-<h3>Tableau de Synthèse</h3>
-<p>Lien vers votre tableau de synthèse.</p>
+<div class="card">
+<h3>E5</h3>
+<p>Tableau de Synthèse</p>
+</div>
 
-<h2>E6</h2>
+<div class="card">
+<h3>E6</h3>
+<p>Fiche situation 1 - Réseau</p>
+</div>
 
-<h3>Fiche de situation 1 - Réseau</h3>
-<p>Description de la situation professionnelle réseau.</p>
-
-<h3>Fiche de situation 2 - Système</h3>
-<p>Description de la situation professionnelle système.</p>
-
-</section>
-
-
-<section id="atelier" class="page">
-
-<h2>A1 - Projet AD</h2>
-<p>Description du projet Active Directory.</p>
-
-<h2>A2 - Projet GLPI</h2>
-<p>Description du projet GLPI.</p>
-
-<h2>A3 - Projet Cyber</h2>
-<p>Description du projet cybersécurité.</p>
-
-<h2>A4 - Projet Cisco</h2>
-<p>Description du projet Cisco.</p>
+<div class="card">
+<h3>E6</h3>
+<p>Fiche situation 2 - Système</p>
+</div>
 
 </section>
 
 
-<section id="veille" class="page">
+<section id="projets" class="section">
 
-<h2>5G / IA</h2>
-<p>Articles et recherches sur la 5G et l'Intelligence Artificielle.</p>
+<h2>Projets</h2>
 
-<h2>RGPD / CNIL</h2>
-<p>Veille juridique sur la protection des données.</p>
+<div class="card">Projet Active Directory</div>
+<div class="card">Projet GLPI</div>
+<div class="card">Projet Cyber</div>
+<div class="card">Projet Cisco</div>
 
-<h2>Crypto</h2>
-<p>Veille sur la cryptographie.</p>
+</section>
 
-<h2>Cybersecurity</h2>
-<p>Actualités et analyses cybersécurité.</p>
+
+<section id="veille" class="section">
+
+<h2>Veille technologique</h2>
+
+<div class="card">5G / Intelligence Artificielle</div>
+<div class="card">RGPD / CNIL</div>
+<div class="card">Cryptographie</div>
+<div class="card">Cybersecurity</div>
+
+</section>
+
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Nom">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Votre message"></textarea>
+
+<button type="submit">Envoyer</button>
+
+</form>
 
 </section>
 
